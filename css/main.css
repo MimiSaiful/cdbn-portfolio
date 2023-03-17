@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'ravioli';
+    src: url('HOLY-RAV-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/rugby.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+
+} 
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li a::after {
+    content: '';
+    height: 4px;
+    width: 0%;
+    background: #d30000;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 6.7vh;
+    font-family: ravioli;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* transform: translateY(35%); */
+    margin-top: 70px;
+    flex-wrap: wrap;
+
+}
+
+.container, .card {
+    cursor: pointer;
+}
+
+img {
+    width: 250px;
+    width: 25.3vh;
+    aspect-ratio: 4/3;
+    border: 2px solid rgba(254,254,254,0.75);
+    border-radius: 15px;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#imglogo{
+    border: none !important;
+}
